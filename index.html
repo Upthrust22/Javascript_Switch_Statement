@@ -12,24 +12,30 @@
     <br><br>
 
     <script>
-        const triangleTypes = "Isosceles"
+        // Given types of triangle, write a script that defines(explains) the triangle based on the following types of triangle: Scalene, Isosceles, Equilateral, Right angle.
 
-        switch (triangleTypes) {
-            case "Scalene":
-                document.write("Scalene Triangle: It has three unequal sides and unequal angles. <br>")
-                break;
-            case "Isosceles":
-                document.write("Isosceles Triangle: It has two sides equal and two angles equal. <br>")
-                break;
-            case "Equilateral":
-                document.write("Equilateral Triangle: It has three equal sides and an angle of 60 degrees on all sides. <br>")
-                break;
-            case "Right Angle":
-                document.write("Right Angle Triangle: It has one of it angle equal to 90 degrees. <br>")
-                break;
-            default:
-                document.write("it is not a triangle. <br>")
+        function switchTriangleTypes(triangleTypes) {
+            switch (triangleTypes) {
+                case "Scalene":
+                    document.write("Scalene Triangle: It has three unequal sides and unequal angles. <br>")
+                    break;
+                case "Isosceles":
+                    document.write("Isosceles Triangle: It has two sides equal and two angles equal. <br>")
+                    break;
+                case "Equilateral":
+                    document.write("Equilateral Triangle: It has three equal sides and an angle of 60 degrees on all sides. <br>")
+                    break;
+                case "Right Angle":
+                    document.write("Right Angle Triangle: It has one of it angle equal to 90 degrees. <br>")
+                    break;
+                default:
+                    document.write("it is not a triangle. <br>")
+            }
         }
+        switchTriangleTypes("Scalene")
+        switchTriangleTypes("Equilateral")
+        switchTriangleTypes("Right Angle")
+        switchTriangleTypes("Scalene")
     </script>
 </body>
 </html>
